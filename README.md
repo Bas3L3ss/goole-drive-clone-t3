@@ -1,10 +1,20 @@
-TODOS:
-fix clerk
-implement better user management ( add a user table )
-add default user files routing
-add file downloading
-add delete folder ( manual parent deletion )
-code suggested:
+# Work In Progress & TODOs
+
+## Authentication & User Management
+
+- [ ] Fix Clerk integration
+- [ ] Implement better user management (add a user table)
+- [ ] Add default user files routing ( make sure it's actually good and UX enhanced )
+
+## File System Features
+
+- [ ] Add file downloading functionality
+- [ ] Implement folder deletion with recursive handling
+- [ ] Enable file/folder sharing (similar to Notion)
+- [ ] Implement file moving, copying
+- [ ] Add better loading state ( toast )
+
+### Deletion Logic
 
 <!-- async function deleteFolder(folderId: number) {
   // Delete all files in this folder
