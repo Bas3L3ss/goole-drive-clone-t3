@@ -1,4 +1,4 @@
-import { auth } from "@clerk/nextjs/server";
+// import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
@@ -13,17 +13,17 @@ export default function HomePage() {
         Secure, fast, and easy file storage for the modern web
       </p>
       <form
-        action={async () => {
-          "use server";
+      // action={async () => {
+      //   "use server";
 
-          const session = await auth();
+      //   const session = await auth();
 
-          if (!session.userId) {
-            return redirect("/sign-in");
-          }
+      //   if (!session.userId) {
+      //     return redirect("/sign-in");
+      //   }
 
-          return redirect("/drive");
-        }}
+      //   return redirect("/drive");
+      // }}
       >
         <Button
           size="lg"

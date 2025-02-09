@@ -1,6 +1,9 @@
 TODOS:
-add delete folder ( manual parent deletion )
+fix clerk
 implement better user management ( add a user table )
+add default user files routing
+add file downloading
+add delete folder ( manual parent deletion )
 code suggested:
 
 <!-- async function deleteFolder(folderId: number) {

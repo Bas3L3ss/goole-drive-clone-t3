@@ -1,8 +1,7 @@
-import "~/styles/globals.css";
-
+import "@/styles/globals.css";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
-import { ClerkProvider } from "@clerk/nextjs";
+// import { ClerkProvider } from "@clerk/nextjs";
 import { PostHogProvider } from "@/providers/posthog-provider";
 export const metadata: Metadata = {
   title: "Drive Tutorial",
@@ -14,12 +13,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <ClerkProvider>
-      <html lang="en" className={`${GeistSans.variable}`}>
-        <body>
-          <PostHogProvider>{children}</PostHogProvider>
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en" className={`${GeistSans.variable}`}>
+      <body>
+        <PostHogProvider>{children}</PostHogProvider>
+      </body>
+    </html>
   );
 }
